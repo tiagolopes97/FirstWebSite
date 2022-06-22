@@ -1,0 +1,334 @@
+                                    /******************************
+                                    **  Trabalho realizado por   **
+                                    **  Tiago Lopes up201909558  **
+                                    ******************************/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*background-color: #24252A;*/
+}
+header {
+    height: 100px;
+}
+                                    /*****************************
+                                    **      Página Início       **
+                                    ******************************/
+.body-inicio {
+    background-image: linear-gradient( rgba(0,0,0,0.7) 10%, 30%,rgba(0,0,0,0.2)), url('images/inicio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*-----Header-----*/
+.logo {
+    float: left;
+    padding: 14px 26px 5px 26px;
+}
+.logo img {
+    width: 20%;
+}
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.nav-item a {
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+    text-decoration: none;
+	font-size: 1.5em;
+    padding: 14px 26px;
+    transition: all 0.3s ease 0s;
+    border-radius: 25px;
+}
+.nav-item a:hover {
+    background-color: rgba(211, 211, 211, 0.157);
+}
+.nav-item a:active {
+    color: rgba(0,0,0,0.5);
+}
+#chosen.nav-item a {
+    color:#fe7b4f;
+}
+#chosen.nav-item a:active {
+    color: rgba(0,0,0,0.5);
+}
+
+/*-----Main-----*/
+.minha-foto {
+    display: block;
+    width: 300px;
+    position: relative;
+    left: 10%;
+    padding-left: 26px;
+    top: 200px;
+}
+.minha-foto img{
+    width: 250px; 
+    height: 367px; 
+    object-fit: cover; 
+    object-position: 100% -65px;
+    border-radius: 10px;
+}
+.inicio-text {
+    position: relative;
+    left: 10%;
+    top: 220px;
+    width: 50%;
+}
+.inicio-text p{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+                                    /*****************************
+                                    **      Página Sobre        **
+                                    ******************************/
+
+.body-sobre {
+    background-image: linear-gradient( rgba(0,0,0,0.6) 10%, 60%,rgba(0,0,0,0.2)), url('images/sobre.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.title-box {
+    background-color: rgba(211, 211, 211, 0.2);
+    border: 2px rgba(211, 211, 211, 0.452) solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding: 15px;
+}
+
+.text-sobre {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 13% 20% 10px 20%;
+}
+
+.text-download {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin: 10% 20% 10px 20%;
+}
+
+.documents {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.documents tr {
+    height: 100px;
+    
+}
+
+.documents td {
+    width: 100px;
+    padding: 30px
+}
+
+.documents img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover; 
+    transition: all 0.3s ease 0s;
+}
+
+.documents img:hover{
+    opacity: 0.6;
+}
+                                    /*****************************
+                                    **      Página Treinos      **
+                                    ******************************/
+
+.body-treinos {
+    background-image: linear-gradient( rgba(0,0,0,0.3) 10%, 30%,rgba(0,0,0,0.2)), url('images/treino.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.tabela-treinos{
+    position: absolute;
+    left: 10%;
+    right: 12%;
+    top: 15%;
+}
+
+.tabela-treinos img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover; 
+    border-radius: 15px;
+    transition: all 0.3s ease 0s;
+}
+
+.tabela-treinos img:hover{
+    opacity: 0.6;
+}
+
+.tabela-treinos tr{
+    height: 350px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 350px;
+}
+
+.row1 td{
+    vertical-align: bottom;
+    padding: 0 15px 15px 15px;
+}
+
+.row2 td{
+    vertical-align: top;
+    padding: 15px 15px 0 15px;
+}
+
+.ex-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #fe7b4f;
+    margin: 26px 0 26px 10%;
+    padding-left: 26px;
+}
+
+.exercises {
+    color: white;
+    position: relative;
+    left: 10%;
+    margin-left: 26px;
+    margin-bottom: 20px;
+    right: 10%;
+}
+
+.exercises img {
+    width: 100%;
+    height: auto;
+    padding-right: 10px;
+}
+
+.exercises tr {
+    height: 280px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.exercises td {
+    width: 565px;
+}
+
+.ex-descr {
+    position: relative;
+    width: 75%;
+    left: 10%;
+    margin-left: 46px;
+    margin-bottom: 100px;
+}
+.ex-descr li{
+    counter-increment: mw-counter;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    padding: 10px 15px 10px 35px;
+    position: relative;
+}
+
+.ex-descr li::before {
+    background: #fe7b4f;
+    border-radius: 20px;
+    box-shadow: 0 0 1px rgb(0 0 0 / 40%), 0 0 0 2px whitesmoke, 5px 0 1px rgb(0 0 0 / 60%);
+    color: #fff;
+    content: counter(mw-counter);
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+    left: -1.2em;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+  }
+
+
+                                    /*****************************
+                                    **      Página Atletas      **
+                                    ******************************/
+
+.body-atletas {
+    background-image: linear-gradient( rgba(0,0,0,0.5) 20%, 80%,rgba(0,0,0,0.2)), url('images/atletas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.tabela-galeria {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row-1{
+    height: auto;
+}
+
+.row-2{
+    height: 30px;
+    font-size: 1.2em;
+}
+
+.row-3{
+    height: 25px;
+}
+
+.row-3 a{
+    text-decoration: none;
+    color: white;
+}
+
+.row-3 a:hover{
+color: #fe7b4f;
+}
+
+.tabela-galeria img {
+    height: 550px;
+    width: auto;
+    object-fit: cover; 
+    transition: all 0.3s ease 0s;
+    margin: 0 50px 0 50px;
+    border-radius: 15px;
+}
